@@ -12,18 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/giuliac/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
-# Lunaris Flags
-LUNARIS_BUILD_TYPE := OFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_CUSTOM_UDFPS := true
-TARGET_OPTIMIZED_DEXOPT := true
-TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
-WITH_GMS := true
-WITH_BCR := true
-
-PRODUCT_NAME := lineage_giuliac
+PRODUCT_NAME := custom_giuliac
 PRODUCT_DEVICE := giuliac
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
